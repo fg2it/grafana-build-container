@@ -35,7 +35,8 @@ RUN apt-get update   && \
         curl            \
         git             \
         make            \
-        xz-utils     && \
+        xz-utils        \
+        unzip        && \
     git clone https://github.com/tpoechtrager/osxcross.git  /tmp/osxcross  && \
     curl -L ${OSX_SDK_URL}/${OSX_SDK}.tar.xz -o /tmp/osxcross/tarballs/${OSX_SDK}.tar.xz && \
     ln -s /usr/bin/clang-3.8 /usr/bin/clang              && \
